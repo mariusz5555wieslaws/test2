@@ -178,19 +178,19 @@ const App: React.FC = () => {
             <div className="px-4 mt-6 flex justify-between gap-2">
               <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
-                <img src={dailyReward} alt="Daily Reward" className="mx-auto w-16 h-16" />
+                <img src={dailyReward} alt="Daily Reward" className="mx-auto w-17 h-17" />
                 <p className="text-[10px] text-center text-white mt-1">Daily reward</p>
                 <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyRewardTimeLeft}</p>
               </div>
               <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
-                <img src={dailyCipher} alt="Daily Cipher" className="mx-auto w-16 h-16" />
+                <img src={dailyCipher} alt="Daily Cipher" className="mx-auto w-17 h-17" />
                 <p className="text-[10px] text-center text-white mt-1">Daily cipher</p>
                 <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyCipherTimeLeft}</p>
               </div>
               <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
-                <img src={dailyCombo} alt="Daily Combo" className="mx-auto w-16 h-16" />
+                <img src={dailyCombo} alt="Daily Combo" className="mx-auto w-17 h-17" />
                 <p className="text-[10px] text-center text-white mt-1">Daily combo</p>
                 <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyComboTimeLeft}</p>
               </div>
@@ -198,7 +198,7 @@ const App: React.FC = () => {
 
             <div className="px-4 mt-4 flex justify-center">
               <div className="px-4 py-2 flex items-center space-x-2">
-                <img src={dollarCoin} alt="Dollar Coin" className="w-10 h-10" />
+                <img src={dollarCoin} alt="Dollar Coin" className="w-12 h-12" />
                 <p className="text-4xl text-white">{points.toLocaleString()}</p>
               </div>
             </div>
