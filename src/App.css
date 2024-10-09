@@ -34,7 +34,7 @@
 }
 
 .circle-outer {
-  background: linear-gradient(to bottom, #129838, #202731);
+  background: linear-gradient(to bottom, #129838, 152f13);
   display: flex;
   align-items: center;
   justify-content: center;
