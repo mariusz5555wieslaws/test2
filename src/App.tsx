@@ -237,7 +237,7 @@ const App: React.FC = () => {
         </div>
         <div className="text-center text-[#85827d] w-1/5">
           <img src={hamsterCoin} alt="Airdrop" className="w-8 h-8 mx-auto" />
-          <p className="mt-1">Airdrop</p>
+          <p className="mt-1">AIRDROP mini CPT</p>
         </div>
       </div>
 
