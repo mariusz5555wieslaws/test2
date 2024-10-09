@@ -36,9 +36,9 @@ const App: React.FC = () => {
   ];
 
   const [levelIndex, setLevelIndex] = useState(6);
-  const [points, setPoints] = useState(22749365);
+  const [points, setPoints] = useState(0);
   const [clicks, setClicks] = useState<{ id: number, x: number, y: number }[]>([]);
-  const pointsToAdd = 11;
+  const pointsToAdd = 10;
   const profitPerHour = 0;
 
   const [dailyRewardTimeLeft, setDailyRewardTimeLeft] = useState("");
@@ -139,7 +139,7 @@ const App: React.FC = () => {
               <Hamster size={24} className="text-[#d4d4d4]" />
             </div>
             <div>
-              <p className="text-sm">Nikandr (CEO)</p>
+              <p className="text-sm">ICOMPNET (CPT-token)</p>
             </div>
           </div>
           <div className="flex items-center justify-between space-x-4 mt-1">
