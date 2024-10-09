@@ -23,8 +23,8 @@
 
 /* Apply the animation to the dot class */
 .dot {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
