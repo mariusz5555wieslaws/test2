@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Hamster from './icons/Hamster';
-import { binanceLogo, dailyCipher, dailyCombo, dailyReward, dollarCoin, hamsterCoin, mainCharacter } from './images';
+import { binanceLogo, dailyCipher, dailyCombo, dailyReward, dollarCoin, firstaidkit ,hamsterCoin, mainCharacter } from './images';
 import Info from './icons/Info';
 import Settings from './icons/Settings';
 import Mine from './icons/Mine';
@@ -236,7 +236,7 @@ const App: React.FC = () => {
           <p className="mt-1">PROFIT</p>
         </div>
         <div className="text-center text-[#85827d] w-1/5">
-          <img src={hamsterCoin} alt="Airdrop" className="w-10 h-10 mx-auto" />
+          <img src={firstaidkit} alt="Airdrop" className="w-10 h-10 mx-auto" />
           <p className="mt-1">firstaidkit</p>
         </div>
       </div>
