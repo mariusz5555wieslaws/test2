@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Hamster from './icons/Hamster';
-import { binanceLogo, dailyCipher, dailyCombo, dailyReward, dollarCoin,hamsterCoin, mainCharacter } from './images';
+import { binanceLogo, dailyCipher, dailyCombo, dailyReward, dollarCoin, hamsterCoin, mainCharacter } from './images';
 import Info from './icons/Info';
 import Settings from './icons/Settings';
 import Mine from './icons/Mine';
@@ -36,10 +36,10 @@ const App: React.FC = () => {
   ];
 
   const [levelIndex, setLevelIndex] = useState(6);
-  const [points, setPoints] = useState(0);
+  const [points, setPoints] = useState(22749365);
   const [clicks, setClicks] = useState<{ id: number, x: number, y: number }[]>([]);
-  const pointsToAdd = 10;
-  const profitPerHour = 0;
+  const pointsToAdd = 11;
+  const profitPerHour = 126420;
 
   const [dailyRewardTimeLeft, setDailyRewardTimeLeft] = useState("");
   const [dailyCipherTimeLeft, setDailyCipherTimeLeft] = useState("");
@@ -139,7 +139,7 @@ const App: React.FC = () => {
               <Hamster size={24} className="text-[#d4d4d4]" />
             </div>
             <div>
-              <p className="text-sm">ICOMPNET (CPT-token)</p>
+              <p className="text-sm">Nikandr (CEO)</p>
             </div>
           </div>
           <div className="flex items-center justify-between space-x-4 mt-1">
@@ -178,50 +178,27 @@ const App: React.FC = () => {
             <div className="px-4 mt-6 flex justify-between gap-2">
               <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
-                <img src={dailyReward} alt="Daily REWERD" className="mx-auto w-17 h-17" />
-                <p className="text-[10px] text-center text-white mt-1">DAILY Reward</p>
+                <img src={dailyReward} alt="Daily Reward" className="mx-auto w-12 h-12" />
+                <p className="text-[10px] text-center text-white mt-1">DAily reward</p>
                 <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyRewardTimeLeft}</p>
               </div>
               <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
-                <img src={dailyCipher} alt="Daily Cipher" className="mx-auto w-17 h-17" />
-                <p className="text-[10px] text-center text-white mt-1">Daily cipher</p>
+                <img src={dailyCipher} alt="Daily Cipher" className="mx-auto w-12 h-12" />
+                <p className="text-[10px] text-center text-white mt-1">DAily cipher</p>
                 <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyCipherTimeLeft}</p>
               </div>
               <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
-                <img src={dailyCombo} alt="Daily Combo" className="mx-auto w-17 h-17" />
-                <p className="text-[10px] text-center text-white mt-1">Daily combo</p>
-                <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyComboTimeLeft}</p>
-              </div>
-            </div>
-            
-        <div className="flex-grow mt-4 bg-[#f3ba2f] rounded-t-[48px] relative top-glow z-0">
-          <div className="absolute top-[2px] left-0 right-0 bottom-0 bg-[#1d2025] rounded-t-[46px]">
-            <div className="px-4 mt-6 flex justify-between gap-2">
-              <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
-                <div className="dot"></div>
-                <img src={dailyReward} alt="Daily Reward" className="mx-auto w-17 h-17" />
-                <p className="text-[10px] text-center text-white mt-1">Daily reward</p>
-                <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyRewardTimeLeft}</p>
-              </div>
-              <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
-                <div className="dot"></div>
-                <img src={dailyCipher} alt="Daily Cipher" className="mx-auto w-17 h-17" />
-                <p className="text-[10px] text-center text-white mt-1">Daily cipher</p>
-                <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyCipherTimeLeft}</p>
-              </div>
-              <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
-                <div className="dot"></div>
-                <img src={dailyCombo} alt="Daily Combo" className="mx-auto w-17 h-17" />
-                <p className="text-[10px] text-center text-white mt-1">Daily combo</p>
+                <img src={dailyCombo} alt="Daily Combo" className="mx-auto w-12 h-12" />
+                <p className="text-[10px] text-center text-white mt-1">DAily combo</p>
                 <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyComboTimeLeft}</p>
               </div>
             </div>
 
             <div className="px-4 mt-4 flex justify-center">
               <div className="px-4 py-2 flex items-center space-x-2">
-                <img src={dollarCoin} alt="Dollar Coin" className="w-12 h-12" />
+                <img src={dollarCoin} alt="Dollar Coin" className="w-10 h-10" />
                 <p className="text-4xl text-white">{points.toLocaleString()}</p>
               </div>
             </div>
@@ -248,19 +225,19 @@ const App: React.FC = () => {
         </div>
         <div className="text-center text-[#85827d] w-1/5">
           <Mine className="w-8 h-8 mx-auto" />
-          <p className="mt-1">STAKING</p>
+          <p className="mt-1">Mine</p>
         </div>
         <div className="text-center text-[#85827d] w-1/5">
           <Friends className="w-8 h-8 mx-auto" />
-          <p className="mt-1">FRIENDS</p>
+          <p className="mt-1">Friends</p>
         </div>
         <div className="text-center text-[#85827d] w-1/5">
           <Coins className="w-8 h-8 mx-auto" />
-          <p className="mt-1">PROFIT</p>
+          <p className="mt-1">Earn</p>
         </div>
         <div className="text-center text-[#85827d] w-1/5">
-          <img src={hamsterCoin} alt="Airdrop" className="w-10 h-10 mx-auto" />
-          <p className="mt-1">AIRDROP</p>
+          <img src={hamsterCoin} alt="Airdrop" className="w-8 h-8 mx-auto" />
+          <p className="mt-1">Airdrop</p>
         </div>
       </div>
 
