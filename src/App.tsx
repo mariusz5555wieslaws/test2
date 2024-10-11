@@ -260,7 +260,7 @@ const App: React.FC = () => {
         </div>
         <div className="text-center text-[#85827d] w-1/5">
           <img src={hamsterCoin} alt="Airdrop" className="w-10 h-10 mx-auto" />
-          <p className="mt-1">firstaidkit</p>
+          <p className="mt-1">AIRDROP</p>
         </div>
       </div>
 
