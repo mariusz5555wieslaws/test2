@@ -10,9 +10,9 @@ import Coins from './icons/Coins';
 
 const App: React.FC = () => {
   const levelNames = [
-    "Bronze",    // From 0 to 4999 coins
-    "Silver",    // From 5000 coins to 24,999 coins
-    "Gold",      // From 25,000 coins to 99,999 coins
+    "Poziom Bronze",    // From 0 to 4999 coins
+    "Poziom Silver",    // From 5000 coins to 24,999 coins
+    "Poziom Gold",      // From 25,000 coins to 99,999 coins
     "Platinum",  // From 100,000 coins to 999,999 coins
     "Diamond",   // From 1,000,000 coins to 2,000,000 coins
     "Epic",      // From 2,000,000 coins to 10,000,000 coins
@@ -36,10 +36,10 @@ const App: React.FC = () => {
   ];
 
   const [levelIndex, setLevelIndex] = useState(6);
-  const [points, setPoints] = useState(22749365);
+  const [points, setPoints] = useState(0);
   const [clicks, setClicks] = useState<{ id: number, x: number, y: number }[]>([]);
-  const pointsToAdd = 11;
-  const profitPerHour = 126420;
+  const pointsToAdd = 15;
+  const profitPerHour = 0;
 
   const [dailyRewardTimeLeft, setDailyRewardTimeLeft] = useState("");
   const [dailyCipherTimeLeft, setDailyCipherTimeLeft] = useState("");
@@ -139,7 +139,7 @@ const App: React.FC = () => {
               <Hamster size={24} className="text-[#d4d4d4]" />
             </div>
             <div>
-              <p className="text-sm">Nikandr (CEO)</p>
+              <p className="text-sm">ICOMPNET-CPT</p>
             </div>
           </div>
           <div className="flex items-center justify-between space-x-4 mt-1">
@@ -160,7 +160,7 @@ const App: React.FC = () => {
               <img src={binanceLogo} alt="Exchange" className="w-8 h-8" />
               <div className="h-[32px] w-[2px] bg-[#43433b] mx-2"></div>
               <div className="flex-1 text-center">
-                <p className="text-xs text-[#85827d] font-medium">Profit per hour</p>
+                <p className="text-xs text-[#85827d] font-medium">Zysk godzinowy</p>
                 <div className="flex items-center justify-center space-x-1">
                   <img src={dollarCoin} alt="Dollar Coin" className="w-[18px] h-[18px]" />
                   <p className="text-sm">{formatProfitPerHour(profitPerHour)}</p>
@@ -178,20 +178,20 @@ const App: React.FC = () => {
             <div className="px-4 mt-6 flex justify-between gap-2">
               <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
-                <img src={dailyReward} alt="Daily Reward" className="mx-auto w-12 h-12" />
-                <p className="text-[10px] text-center text-white mt-1">DAily reward</p>
+                <img src={dailyReward} alt="Daily Reward" className="mx-auto w-14 h-14" />
+                <p className="text-[10px] text-center text-white mt-1">Nagroda</p>
                 <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyRewardTimeLeft}</p>
               </div>
               <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
-                <img src={dailyCipher} alt="Daily Cipher" className="mx-auto w-12 h-12" />
-                <p className="text-[10px] text-center text-white mt-1">DAily cipher</p>
+                <img src={dailyCipher} alt="Daily Cipher" className="mx-auto w-14 h-14" />
+                <p className="text-[10px] text-center text-white mt-1">Dzienna nagroda</p>
                 <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyCipherTimeLeft}</p>
               </div>
               <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
                 <div className="dot"></div>
-                <img src={dailyCombo} alt="Daily Combo" className="mx-auto w-12 h-12" />
-                <p className="text-[10px] text-center text-white mt-1">DAily combo</p>
+                <img src={dailyCombo} alt="Daily Combo" className="mx-auto w-14 h-14" />
+                <p className="text-[10px] text-center text-white mt-1">Razem</p>
                 <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyComboTimeLeft}</p>
               </div>
             </div>
@@ -218,22 +218,22 @@ const App: React.FC = () => {
       </div>
 
       {/* Bottom fixed div */}
-      <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[calc(100%-2rem)] max-w-xl bg-[#272a2f] flex justify-around items-center z-50 rounded-3xl text-xs">
+      <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[calc(100%-2rem)] max-w-xl bg-[#272a2f] flex justify-around items-center z-60 rounded-3xl text-xs">
         <div className="text-center text-[#85827d] w-1/5 bg-[#1c1f24] m-1 p-2 rounded-2xl">
           <img src={binanceLogo} alt="Exchange" className="w-8 h-8 mx-auto" />
           <p className="mt-1">Exchange</p>
         </div>
         <div className="text-center text-[#85827d] w-1/5">
           <Mine className="w-8 h-8 mx-auto" />
-          <p className="mt-1">Mine</p>
+          <p className="mt-1">STAKING</p>
         </div>
         <div className="text-center text-[#85827d] w-1/5">
           <Friends className="w-8 h-8 mx-auto" />
-          <p className="mt-1">Friends</p>
+          <p className="mt-1">FRIENDS</p>
         </div>
         <div className="text-center text-[#85827d] w-1/5">
           <Coins className="w-8 h-8 mx-auto" />
-          <p className="mt-1">Earn</p>
+          <p className="mt-1">SAFE</p>
         </div>
         <div className="text-center text-[#85827d] w-1/5">
           <img src={hamsterCoin} alt="Airdrop" className="w-8 h-8 mx-auto" />
